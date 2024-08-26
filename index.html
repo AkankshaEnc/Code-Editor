@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="html">HTML</button>
+                <button class="tab-button" data-tab="css">CSS</button>
+                <button class="tab-button" data-tab="js">JavaScript</button>
+            </div>
+            <div class="code-container">
+                <textarea id="htmlCode" class="code-editor" placeholder="Write HTML here..."></textarea>
+                <button class="copy-button" data-target="htmlCode">Copy HTML</button>
+            </div>
+            <div class="code-container">
+                <textarea id="cssCode" class="code-editor" placeholder="Write CSS here..."></textarea>
+                <button class="copy-button" data-target="cssCode">Copy CSS</button>
+            </div>
+            <div class="code-container">
+                <textarea id="jsCode" class="code-editor" placeholder="Write JavaScript here..."></textarea>
+                <button class="copy-button" data-target="jsCode">Copy JavaScript</button>
+            </div>
+        </div>
+        <div class="preview">
+            <iframe id="previewFrame"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
